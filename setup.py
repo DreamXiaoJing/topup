@@ -16,7 +16,7 @@ setup(
     description="统一充值SDK",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="",  # 可选：填写GitHub/Gitee地址
+    url="https://github.com/DreamXiaoJing/topup",  # 可选：填写GitHub/Gitee地址
     license="MIT",
 
     # 包发现
