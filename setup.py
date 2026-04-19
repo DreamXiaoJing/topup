@@ -18,9 +18,8 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/DreamXiaoJing/topup",  # 可选：填写GitHub/Gitee地址
     license="MIT",
-
-    # 包发现
-    packages=find_packages(),
+    package_dir={"": "src"},           # 指定源码在 src 下
+    packages=find_packages(where="src"),  # 在 src 目录下查找包
 
     # Python版本
     python_requires=">=3.8",
@@ -34,7 +33,6 @@ setup(
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",
-        "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.8",
